@@ -1,0 +1,48 @@
+{
+  "common": {
+    "hero_title": "Código limpo.\nResultados rápidos.",
+    "hero_subtitle": "Desenvolvedor Android & Front-End com experiência em liderança técnica e Product Ownership.",
+    "whatsapp": "Falar no WhatsApp",
+    "email": "Enviar E-mail"
+  },
+  "nav": {
+    "services": "Serviços",
+    "portfolio": "Portfólio",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "services": {
+    "title": "Serviços",
+    "subtitle": "O que posso fazer por você",
+    "android": {
+      "title": "Desenvolvimento Android",
+      "description": "Apps nativos com Kotlin, arquitetura limpa e boas práticas"
+    },
+    "frontend": {
+      "title": "Desenvolvimento Front-End",
+      "description": "Sites e aplicações web modernas com React e Next.js"
+    },
+    "product": {
+      "title": "Product Ownership",
+      "description": "Gestão de produtos e liderança técnica de equipes"
+    }
+  },
+  "portfolio": {
+    "title": "Portfólio",
+    "subtitle": "Projetos recentes",
+    "view_project": "Ver projeto",
+    "view_repo": "Ver repositório",
+    "view_live": "Ver em produção"
+  },
+  "about": {
+    "title": "Sobre",
+    "subtitle": "Um pouco sobre mim",
+    "description": "Sou Eduardo, desenvolvedor apaixonado por transformar ideias em produtos reais. Com experiência em Kotlin, React + Next.js e liderança de times como Product Owner, já entreguei apps nativos, plataformas web de alta performance e landing pages que convertem. Meu foco é escrever código limpo, criar experiências fluidas e gerar valor de negócio — seja em projetos freelance ou em times CLT/PJ.",
+    "download_cv": "Baixar CV completo"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Vamos conversar",
+    "description": "Estou disponível para novos projetos e oportunidades."
+  }
+} 

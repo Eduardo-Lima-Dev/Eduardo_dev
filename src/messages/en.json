@@ -1,0 +1,48 @@
+{
+  "common": {
+    "hero_title": "Clean code.\nFast results.",
+    "hero_subtitle": "Android & Front-End Developer with experience in technical leadership and Product Ownership.",
+    "whatsapp": "Talk on WhatsApp",
+    "email": "Send Email"
+  },
+  "nav": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I can do for you",
+    "android": {
+      "title": "Android Development",
+      "description": "Native apps with Kotlin, clean architecture and best practices"
+    },
+    "frontend": {
+      "title": "Front-End Development",
+      "description": "Modern websites and web applications with React and Next.js"
+    },
+    "product": {
+      "title": "Product Ownership",
+      "description": "Product management and technical team leadership"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Recent projects",
+    "view_project": "View project",
+    "view_repo": "View repository",
+    "view_live": "View live"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "A bit about me",
+    "description": "I'm Eduardo, a developer passionate about turning ideas into real products. With experience in Kotlin, React + Next.js and team leadership as a Product Owner, I've delivered native apps, high-performance web platforms and converting landing pages. My focus is writing clean code, creating fluid experiences and generating business value — whether in freelance projects or CLT/PJ teams.",
+    "download_cv": "Download full CV"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk",
+    "description": "I'm available for new projects and opportunities."
+  }
+} 
