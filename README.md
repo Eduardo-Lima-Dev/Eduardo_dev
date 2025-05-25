@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eduardo Dev - Landing Page Pessoal
 
-## Getting Started
+Este é o repositório da minha landing page pessoal, desenvolvida com Next.js 14, TypeScript e Tailwind CSS. O site apresenta meu portfólio, serviços e informações de contato, com suporte a múltiplos idiomas.
 
-First, run the development server:
+## 🚀 Tecnologias
 
+- [Next.js 14](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [next-intl](https://next-intl-docs.vercel.app/) - Internacionalização
+- [Framer Motion](https://www.framer.com/motion/) - Animações
+- [Lottie](https://lottiefiles.com/) - Animações vetoriais
+- [Shadcn/ui](https://ui.shadcn.com/) - Componentes UI
+
+## ✨ Funcionalidades
+
+- 🌐 Suporte a múltiplos idiomas (Português e Inglês)
+- 📱 Design responsivo
+- 🎨 Animações suaves e interativas
+- 🎯 SEO otimizado
+- ⚡ Performance otimizada
+- 🌙 Modo escuro/claro
+
+## 🛠️ Instalação
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone git@github.com-personal:Eduardo-Lima-Dev/Eduardo_dev.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Execute o servidor de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Acesse [http://localhost:3000](http://localhost:3000) no seu navegador
 
-## Learn More
+## 📁 Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                 # Rotas e páginas da aplicação
+├── components/         # Componentes React reutilizáveis
+├── hooks/             # Custom hooks
+├── i18n/              # Configuração de internacionalização
+├── lib/               # Utilitários e funções auxiliares
+├── messages/          # Arquivos de tradução
+└── middleware.ts      # Middleware para roteamento
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Internacionalização
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O projeto suporta múltiplos idiomas através do next-intl. As traduções estão localizadas em:
+- `src/messages/pt.json` - Português
+- `src/messages/en.json` - Inglês
 
-## Deploy on Vercel
+## 🎨 Estilização
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Utiliza Tailwind CSS para estilização
+- Componentes UI do Shadcn/ui
+- Animações com Framer Motion e Lottie
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📱 Responsividade
+
+O site é totalmente responsivo e otimizado para:
+- Desktop
+- Tablet
+- Mobile
+
+## 🚀 Deploy
+
+O projeto está hospedado na Vercel e pode ser acessado em: [https://eduardo-dev.vercel.app](https://eduardo-dev.vercel.app)
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Autor
+
+Eduardo Lima
+- GitHub: [@Eduardo-Lima-Dev](https://github.com/Eduardo-Lima-Dev)
+- LinkedIn: [Eduardo Lima](https://www.linkedin.com/in/eduardo-lima-dev/)
