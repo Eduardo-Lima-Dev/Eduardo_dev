@@ -20,17 +20,33 @@ export default function Navbar() {
     const handleScroll = () => {
       const sections = ['hero', 'services', 'portfolio', 'about', 'contact'];
       const scrollPosition = window.scrollY + 200;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      
+      // Se estiver próximo do final da página, seleciona a seção de contato
+      if (scrollPosition + windowHeight >= documentHeight - 100) {
+        setActiveSection('contact');
+        return;
+      }
+
+      // Encontrar a seção mais próxima do topo da viewport
+      let currentSection = sections[0];
+      let minDistance = Infinity;
 
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section);
-            break;
+          const distance = Math.abs(offsetTop - scrollPosition);
+          
+          if (distance < minDistance) {
+            minDistance = distance;
+            currentSection = section;
           }
         }
       }
+
+      setActiveSection(currentSection);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -42,7 +58,6 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 backdrop-blur bg-base/70">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
         <Link href="#hero" className="font-bold text-xl">
-          {/* SVG simplificada da sua logo → substitua pelo import real */}
           <span className="text-primary">E</span>D
         </Link>
 

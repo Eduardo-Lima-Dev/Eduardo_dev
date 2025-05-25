@@ -24,9 +24,8 @@ export default function About() {
           animate={controls}
           className="w-full md:w-1/3"
         >
-          {/* Troque por foto real ou avatar */}
           <Image
-            src="/images/profile.jpg"
+            src="/images/profile_1.jpg"
             alt="Eduardo Dev"
             width={400}
             height={400}

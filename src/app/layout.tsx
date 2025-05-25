@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
+import ScrollButton from "@/components/ScrollButton";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,6 +56,8 @@ export default async function RootLayout({
     <html lang={locale} data-theme="dark">
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <Navbar />
+          <ScrollButton />
           {children}
           <Footer />
           <Toaster position="bottom-center" />

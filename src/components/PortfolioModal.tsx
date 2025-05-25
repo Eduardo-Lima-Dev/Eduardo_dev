@@ -80,14 +80,14 @@ export default function PortfolioModal({ open, onClose, item }: Props) {
                 className="h-full w-full"
               />
             ) : (
-              <Image
+          <Image
                 src={item.img || '/images/placeholder.png'}
-                alt={item.title}
-                width={800}
-                height={450}
+            alt={item.title}
+            width={800}
+            height={450}
                 className="rounded-lg object-cover"
                 unoptimized={item.img?.includes('microlink.io')}
-              />
+          />
             )}
           </div>
 
@@ -106,12 +106,12 @@ export default function PortfolioModal({ open, onClose, item }: Props) {
           </div>
 
           <div className="mt-6 flex gap-4">
-            <a
-              href={item.repo}
-              target="_blank"
-              rel="noopener noreferrer"
+          <a
+            href={item.repo}
+            target="_blank"
+            rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 font-semibold shadow hover:bg-primary-dark"
-            >
+          >
               <Github size={20} />
               {t('view_repo')}
             </a>
