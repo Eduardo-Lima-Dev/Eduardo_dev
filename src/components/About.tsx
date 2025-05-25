@@ -22,7 +22,7 @@ export default function About() {
           variants={fadeUp}
           initial="hidden"
           animate={controls}
-          className="w-full md:w-1/3"
+          className="w-full flex justify-center md:w-1/3 md:justify-start"
         >
           <Image
             src="/images/profile_1.jpg"
@@ -37,19 +37,21 @@ export default function About() {
           variants={fadeUp}
           initial="hidden"
           animate={controls}
-          className="w-full md:w-2/3"
+          className="w-full text-center md:w-2/3 md:text-left"
         >
           <h2 className="text-3xl font-bold md:text-4xl">{t('title')}</h2>
           <p className="mt-4 text-lg leading-relaxed text-zinc-300">
             {t('description')}
           </p>
 
-          <button
-            onClick={handleDownloadCV}
-            className="mt-6 inline-block rounded-lg border border-primary px-6 py-3 font-semibold hover:bg-primary/10"
-          >
-            {t('download_cv')}
-          </button>
+          <div className="flex justify-center md:justify-start">
+            <button
+              onClick={handleDownloadCV}
+              className="mt-6 inline-block rounded-lg border border-primary px-6 py-3 font-semibold hover:bg-primary/10"
+            >
+              {t('download_cv')}
+            </button>
+          </div>
         </motion.div>
       </div>
     </section>
