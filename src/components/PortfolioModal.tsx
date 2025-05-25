@@ -6,6 +6,9 @@ import { X, ExternalLink, Github } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants";
 import { useTranslations } from "next-intl";
+import Lottie from "lottie-react";
+import Flag from "./Flag";
+import toast from "react-hot-toast";
 
 interface Props {
   open: boolean;
@@ -29,6 +32,27 @@ export default function PortfolioModal({ open, onClose, item }: Props) {
   const t = useTranslations('portfolio');
   
   if (!item) return null;
+
+  const isWebProject = item.stack.some(tech => 
+    tech.toLowerCase().includes('next.js') || 
+    tech.toLowerCase().includes('react') || 
+    tech.toLowerCase().includes('vue') || 
+    tech.toLowerCase().includes('angular')
+  );
+
+  const handleProductionClick = (e: React.MouseEvent) => {
+    if (item.inDevelopment) {
+      e.preventDefault();
+      toast.error(t('not_in_production'), {
+        style: {
+          background: '#1a1a1a',
+          color: '#fff',
+          border: '1px solid #333',
+        },
+      });
+    }
+  };
+  
   return (
     <Dialog open={open} onClose={onClose} className="relative z-50">
       <div className="fixed inset-0 bg-black/60" aria-hidden="true" />
@@ -47,13 +71,25 @@ export default function PortfolioModal({ open, onClose, item }: Props) {
             <X size={24} />
           </button>
 
-          <Image
-            src={item.img || '/images/placeholder.png'}
-            alt={item.title}
-            width={800}
-            height={450}
-            className="rounded-lg"
-          />
+          <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-base">
+            {item.inDevelopment && <Flag />}
+            {item.animation ? (
+              <Lottie
+                animationData={item.animation}
+                loop={true}
+                className="h-full w-full"
+              />
+            ) : (
+              <Image
+                src={item.img || '/images/placeholder.png'}
+                alt={item.title}
+                width={800}
+                height={450}
+                className="rounded-lg object-cover"
+                unoptimized={item.img?.includes('microlink.io')}
+              />
+            )}
+          </div>
 
           <h3 className="mt-4 text-2xl font-bold">{item.title}</h3>
           <p className="mt-2 text-zinc-300">{item.description}</p>
@@ -79,12 +115,17 @@ export default function PortfolioModal({ open, onClose, item }: Props) {
               <Github size={20} />
               {t('view_repo')}
             </a>
-            {item.production && (
+            {item.production && isWebProject && (
               <a
                 href={item.production}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-primary px-4 py-2 font-semibold hover:bg-primary/10"
+                onClick={handleProductionClick}
+                className={`inline-flex items-center gap-2 rounded-lg border px-4 py-2 font-semibold ${
+                  item.inDevelopment
+                    ? 'border-zinc-600 text-zinc-400 cursor-not-allowed'
+                    : 'border-primary text-white hover:bg-primary/10'
+                }`}
               >
                 <ExternalLink size={20} />
                 {t('view_live')}

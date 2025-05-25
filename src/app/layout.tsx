@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export const metadata = {
     siteName: "Eduardo Dev",
     images: [
       {
-        url: "/og-cover.png", // crie uma imagem 1200x630
+        url: "/og-cover.png",
         width: 1200,
         height: 630,
         alt: "Banner Eduardo Dev",
@@ -55,6 +56,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
           <Footer />
+          <Toaster position="bottom-center" />
         </NextIntlClientProvider>
       </body>
     </html>

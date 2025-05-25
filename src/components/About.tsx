@@ -10,6 +10,10 @@ export default function About() {
   const [controls, ref] = useScrollAnimation();
   const t = useTranslations('about');
 
+  const handleDownloadCV = () => {
+    window.open('/cv.pdf', '_blank');
+  };
+
   return (
     <section id="about" className="py-24">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-10 px-6 md:flex-row">
@@ -41,13 +45,12 @@ export default function About() {
             {t('description')}
           </p>
 
-          <a
-            href="/cv.pdf"
-            target="_blank"
+          <button
+            onClick={handleDownloadCV}
             className="mt-6 inline-block rounded-lg border border-primary px-6 py-3 font-semibold hover:bg-primary/10"
           >
             {t('download_cv')}
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>

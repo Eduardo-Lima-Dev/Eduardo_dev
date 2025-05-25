@@ -2,15 +2,18 @@
 
 import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations('footer');
+
   return (
     <footer className="border-t border-zinc-800 bg-base/50 py-8">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="text-center md:text-left">
             <p className="text-sm text-zinc-400">
-              © {new Date().getFullYear()} Eduardo Dev. Todos os direitos reservados.
+              {t('rights', { year: new Date().getFullYear() })}
             </p>
           </div>
 

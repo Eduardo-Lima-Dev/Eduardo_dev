@@ -11,7 +11,10 @@ export default function LocaleSwitcher() {
 
   const switchLocale = () => {
     const newLocale = locale === "pt" ? "en" : "pt";
-    router.push(pathname.replace(`/${locale}`, `/${newLocale}`));
+    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
+    
+    // Força a navegação para a nova URL
+    window.location.href = newPath;
   };
 
   return (

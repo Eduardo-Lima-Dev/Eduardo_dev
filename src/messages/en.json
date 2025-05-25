@@ -2,7 +2,7 @@
   "common": {
     "hero_title": "Clean code.\nFast results.",
     "hero_subtitle": "Android & Front-End Developer with experience in technical leadership and Product Ownership.",
-    "whatsapp": "Talk on WhatsApp",
+    "whatsapp": "Chat on WhatsApp",
     "email": "Send Email"
   },
   "nav": {
@@ -32,17 +32,57 @@
     "subtitle": "Recent projects",
     "view_project": "View project",
     "view_repo": "View repository",
-    "view_live": "View live"
+    "view_live": "View in production",
+    "not_in_production": "This project is still in development",
+    "projects": {
+      "pixelados": {
+        "description": "Easily split expenses for shared houses and co-living spaces."
+      },
+      "powerfit": {
+        "description": "Kotlin Compose app for managing workouts and results in gyms."
+      },
+      "bulletquest": {
+        "description": "Gamified task platform — acting as PO and Tech-Lead."
+      },
+      "meuracha": {
+        "description": "System for leveling soccer players through 1-5 star ratings."
+      },
+      "frequentium": {
+        "description": "Facilitates the registration of complementary hours for Meu Racha participants."
+      },
+      "homelife": {
+        "description": "Platform for home healthcare services and patient care."
+      },
+      "androidconnect": {
+        "description": "Flutter app that connects your Android device to PC via Wi-Fi for debugging."
+      },
+      "quixhouse": {
+        "description": "Mobile app for students to find and advertise rentals in Quixadá."
+      },
+      "eficienciaenergetica": {
+        "description": "Node.js backend and Java Android app for ambient light measurement."
+      },
+      "rediux": {
+        "description": "Web platform for sharing educational content about UX."
+      }
+    }
   },
   "about": {
     "title": "About",
     "subtitle": "A bit about me",
-    "description": "I'm Eduardo, a developer passionate about turning ideas into real products. With experience in Kotlin, React + Next.js and team leadership as a Product Owner, I've delivered native apps, high-performance web platforms and converting landing pages. My focus is writing clean code, creating fluid experiences and generating business value — whether in freelance projects or CLT/PJ teams.",
+    "description": "I'm Eduardo, a developer passionate about turning ideas into real products. With experience in Kotlin, React + Next.js, and team leadership as a Product Owner, I've delivered native apps, high-performance web platforms, and converting landing pages. My focus is on writing clean code, creating fluid experiences, and generating business value — whether in freelance projects or CLT/PJ teams.",
     "download_cv": "Download full CV"
   },
   "contact": {
     "title": "Contact",
     "subtitle": "Let's talk",
-    "description": "I'm available for new projects and opportunities."
+    "description": "I'm available for new projects and opportunities.",
+    "build_something": "Let's build something amazing?",
+    "send_details": "Send your project details or talk directly with me:",
+    "whatsapp": "WhatsApp",
+    "email": "eduardo.devtech@gmail.com"
+  },
+  "footer": {
+    "rights": "© {year} Eduardo Dev. All rights reserved."
   }
 } 

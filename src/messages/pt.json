@@ -32,7 +32,40 @@
     "subtitle": "Projetos recentes",
     "view_project": "Ver projeto",
     "view_repo": "Ver repositório",
-    "view_live": "Ver em produção"
+    "view_live": "Ver em produção",
+    "not_in_production": "Este projeto ainda está em desenvolvimento",
+    "projects": {
+      "pixelados": {
+        "description": "Divida despesas de repúblicas e moradias compartilhadas com facilidade."
+      },
+      "powerfit": {
+        "description": "App Kotlin Compose para gestão de treinos e resultados em academias."
+      },
+      "bulletquest": {
+        "description": "Plataforma gamificada de tarefas — atuo como PO e Tech-Lead."
+      },
+      "meuracha": {
+        "description": "Sistema para nivelar jogadores de futebol via avaliações 1-5 estrelas."
+      },
+      "frequentium": {
+        "description": "Facilita o registro de horas complementares dos participantes do Meu Racha."
+      },
+      "homelife": {
+        "description": "Plataforma para serviços de saúde domiciliar e atendimento a pacientes."
+      },
+      "androidconnect": {
+        "description": "App Flutter que conecta seu dispositivo Android ao PC via Wi-Fi para depuração."
+      },
+      "quixhouse": {
+        "description": "App mobile para alunos encontrarem e anunciarem aluguéis em Quixadá."
+      },
+      "eficienciaenergetica": {
+        "description": "Backend Node.js e aplicativo Android em Java para medição de luz ambiente."
+      },
+      "rediux": {
+        "description": "Plataforma web para compartilhar conteúdo educacional sobre UX."
+      }
+    }
   },
   "about": {
     "title": "Sobre",
@@ -43,6 +76,13 @@
   "contact": {
     "title": "Contato",
     "subtitle": "Vamos conversar",
-    "description": "Estou disponível para novos projetos e oportunidades."
+    "description": "Estou disponível para novos projetos e oportunidades.",
+    "build_something": "Vamos construir algo incrível?",
+    "send_details": "Envie detalhes do seu projeto ou fale direto comigo:",
+    "whatsapp": "WhatsApp",
+    "email": "eduardo.devtech@gmail.com"
+  },
+  "footer": {
+    "rights": "© {year} Eduardo Dev. Todos os direitos reservados."
   }
 } 
