@@ -5,16 +5,12 @@ import { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { useTranslations } from 'next-intl';
+import Image from "next/image";
 
 export default function Navbar() {
   const [dark, setDark] = useState(true);
   const [activeSection, setActiveSection] = useState('hero');
   const t = useTranslations('nav');
-
-  const toggleTheme = () => {
-    document.documentElement.dataset.theme = dark ? "light" : "dark";
-    setDark(!dark);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,7 +53,14 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 backdrop-blur bg-base/70">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-        <Link href="#hero" className="font-bold text-xl">
+      <Link href="#hero" className="font-bold text-xl flex items-center">
+          <Image 
+            src="/images/Logo_Branca.png" 
+            alt="Logo" 
+            width={24} 
+            height={24}
+            className="mr-2"
+          />
           <span className="text-primary">E</span>D
         </Link>
 
@@ -78,9 +81,6 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <LocaleSwitcher />
-          <button onClick={toggleTheme} aria-label="Theme toggle">
-            {dark ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
         </div>
       </nav>
     </header>
