@@ -84,5 +84,9 @@
   },
   "footer": {
     "rights": "© {year} Eduardo Dev. Todos os direitos reservados."
+  },
+  "scroll": {
+    "scroll": "Descer",
+    "backToTop": "Voltar ao início"
   }
 } 

@@ -1,11 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 const sections = ["hero", "services", "portfolio", "about", "contact"];
 
 export default function ScrollButton() {
   const [currentSection, setCurrentSection] = useState("hero");
+  const t = useTranslations('scroll');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,13 +53,13 @@ export default function ScrollButton() {
       onClick={handleClick}
       className="fixed right-2 top-1/2 z-50 flex flex-col items-center px-2 py-3 rounded-lg text-zinc-400 hover:text-primary transition-colors"
       style={{ transform: "translateY(-50%)" }}
-      aria-label={isAtEnd ? "Voltar ao início" : "Scroll"}
+      aria-label={isAtEnd ? t('backToTop') : t('scroll')}
     >
       <span
         className="text-xs mb-1"
         style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
       >
-        {isAtEnd ? "Início" : "Scroll"}
+        {isAtEnd ? t('backToTop') : t('scroll')}
       </span>
       {isAtEnd ? <ChevronUp size={28} /> : <ChevronDown size={28} />}
     </button>
