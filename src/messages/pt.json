@@ -34,6 +34,7 @@
     "view_repo": "Ver repositório",
     "view_live": "Ver em produção",
     "not_in_production": "Este projeto ainda está em desenvolvimento",
+    "view_all_projects": "Ver todos os projetos",
     "projects": {
       "pixelados": {
         "description": "Divida despesas de repúblicas e moradias compartilhadas com facilidade."
@@ -64,6 +65,12 @@
       },
       "rediux": {
         "description": "Plataforma web para compartilhar conteúdo educacional sobre UX."
+      },
+      "siggflow": {
+        "description": "Sistema de cadastro e gestão de alunos da UFC de Quixadá, com controle de matérias cursadas."
+      },
+      "malibuatelie": {
+        "description": "Sistema de catálogo virtual para loja de crochê, desenvolvido como projeto freelance."
       }
     }
   },

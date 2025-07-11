@@ -34,6 +34,7 @@
     "view_repo": "View repository",
     "view_live": "View in production",
     "not_in_production": "This project is still in development",
+    "view_all_projects": "View all projects",
     "projects": {
       "pixelados": {
         "description": "Easily split expenses for shared houses and co-living spaces."
@@ -64,6 +65,12 @@
       },
       "rediux": {
         "description": "Web platform for sharing educational content about UX."
+      },
+      "siggflow": {
+        "description": "Student registration and management system for UFC Quixadá, with course subject tracking."
+      },
+      "malibuatelie": {
+        "description": "Virtual catalog system for crochet store, developed as a freelance project."
       }
     }
   },

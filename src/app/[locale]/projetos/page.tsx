@@ -3,27 +3,26 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeUp } from "./variants";
+import { fadeUp } from "@/components/variants";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
-import PortfolioModal, { PortfolioItem } from "./PortfolioModal";
+import PortfolioModal, { PortfolioItem } from "@/components/PortfolioModal";
 import { useTranslations } from "next-intl";
 import Lottie from "lottie-react";
-import androidAnimation from "../../public/animations/android.json";
-import fitnessAnimation from "../../public/animations/fitness.json";
-import homeAnimation from "../../public/animations/home.json";
-import uiAnimation from "../../public/animations/ui.json";
-import energyAnimation from "../../public/animations/energy.json";
-import Flag from "./Flag";
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import androidAnimation from "../../../../public/animations/android.json";
+import fitnessAnimation from "../../../../public/animations/fitness.json";
+import homeAnimation from "../../../../public/animations/home.json";
+import uiAnimation from "../../../../public/animations/ui.json";
+import energyAnimation from "../../../../public/animations/energy.json";
+import Flag from "@/components/Flag";
+import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from 'react-icons/fa';
 import Link from "next/link";
 
-export default function Portfolio() {
+export default function ProjetosPage() {
   const [selected, setSelected] = useState<PortfolioItem | null>(null);
   const [controls, ref] = useScrollAnimation();
   const t = useTranslations('portfolio');
 
-  // Array com todos os projetos
-  const allItems: PortfolioItem[] = [
+  const items: PortfolioItem[] = [
     {
       id: "pixelados",
       title: "PIXelados",
@@ -137,32 +136,39 @@ export default function Portfolio() {
     },
   ];
 
-  // Filtra apenas os 6 projetos selecionados para mostrar na página inicial
-  const selectedIds = ["pixelados", "malibuatelie", "siggflow", "frequentium", "meuracha", "homelife"];
-  const items = allItems.filter(item => selectedIds.includes(item.id));
-
   return (
-    <section id="portfolio" className="py-24">
-      <div className="mx-auto max-w-6xl px-6">
-        <motion.h2
-          ref={ref}
-          variants={fadeUp}
-          initial="hidden"
-          animate={controls}
-          className="text-center text-3xl font-bold md:text-5xl"
-        >
-          {t('title')}
-        </motion.h2>
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          animate={controls}
-          className="mt-4 text-center text-zinc-400"
-        >
-          {t('subtitle')}
-        </motion.p>
+    <div className="min-h-screen bg-background">
+      <div className="mx-auto max-w-6xl px-6 py-24">
+        {/* Header */}
+        <div className="mb-12">
+          <Link 
+            href="/"
+            className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-6"
+          >
+            <FaArrowLeft />
+            Voltar ao início
+          </Link>
+          <motion.h1
+            ref={ref}
+            variants={fadeUp}
+            initial="hidden"
+            animate={controls}
+            className="text-4xl font-bold md:text-6xl mb-4"
+          >
+            Todos os Projetos
+          </motion.h1>
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            animate={controls}
+            className="text-zinc-400 text-lg"
+          >
+            Uma coleção completa dos meus projetos e trabalhos
+          </motion.p>
+        </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        {/* Grid de projetos */}
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => (
             <motion.button
               key={item.id}
@@ -196,22 +202,6 @@ export default function Portfolio() {
             </motion.button>
           ))}
         </div>
-
-        {/* Botão Ver Mais */}
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          animate={controls}
-          className="mt-12 text-center"
-        >
-          <Link
-            href="/projetos"
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-white transition-all hover:bg-primary/80 hover:scale-105"
-          >
-            {t('view_all_projects')}
-            <FaExternalLinkAlt className="text-sm" />
-          </Link>
-        </motion.div>
       </div>
 
       <PortfolioModal
@@ -219,6 +209,6 @@ export default function Portfolio() {
         onClose={() => setSelected(null)}
         item={selected}
       />
-    </section>
+    </div>
   );
-}
+} 

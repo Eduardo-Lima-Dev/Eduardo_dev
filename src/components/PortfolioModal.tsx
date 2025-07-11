@@ -26,6 +26,7 @@ export interface PortfolioItem {
   img?: string;
   animation?: any;
   inDevelopment?: boolean;
+  allowProduction?: boolean;
 }
 
 export default function PortfolioModal({ open, onClose, item }: Props) {
@@ -41,7 +42,7 @@ export default function PortfolioModal({ open, onClose, item }: Props) {
   );
 
   const handleProductionClick = (e: React.MouseEvent) => {
-    if (item.inDevelopment) {
+    if (item.inDevelopment && !item.allowProduction) {
       e.preventDefault();
       toast.error(t('not_in_production'), {
         style: {
@@ -122,7 +123,7 @@ export default function PortfolioModal({ open, onClose, item }: Props) {
                 rel="noopener noreferrer"
                 onClick={handleProductionClick}
                 className={`inline-flex items-center gap-2 rounded-lg border px-4 py-2 font-semibold ${
-                  item.inDevelopment
+                  item.inDevelopment && !item.allowProduction
                     ? 'border-zinc-600 text-zinc-400 cursor-not-allowed'
                     : 'border-primary text-white hover:bg-primary/10'
                 }`}
