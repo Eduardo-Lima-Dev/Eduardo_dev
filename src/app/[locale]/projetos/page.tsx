@@ -21,6 +21,7 @@ export default function ProjetosPage() {
   const [selected, setSelected] = useState<PortfolioItem | null>(null);
   const [controls, ref] = useScrollAnimation();
   const t = useTranslations('portfolio');
+  const tScroll = useTranslations('scroll');
 
   const items: PortfolioItem[] = [
     {
@@ -146,7 +147,7 @@ export default function ProjetosPage() {
             className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-6"
           >
             <FaArrowLeft />
-            Voltar ao início
+            {tScroll('backToTop')}
           </Link>
           <motion.h1
             ref={ref}
@@ -155,7 +156,7 @@ export default function ProjetosPage() {
             animate={controls}
             className="text-4xl font-bold md:text-6xl mb-4"
           >
-            Todos os Projetos
+            {t('all_projects')}
           </motion.h1>
           <motion.p
             variants={fadeUp}
@@ -163,7 +164,7 @@ export default function ProjetosPage() {
             animate={controls}
             className="text-zinc-400 text-lg"
           >
-            Uma coleção completa dos meus projetos e trabalhos
+            {t('all_projects_subtitle')}
           </motion.p>
         </div>
 

@@ -91,5 +91,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 👨‍💻 Autor
 
 Eduardo Lima
-- GitHub: [@Eduardo-Lima-Dev](https://github.com/Eduardo-Lima-Dev)
-- LinkedIn: [Eduardo Lima](https://www.linkedin.com/in/eduardo-lima-dev/)
+- GitHub: [@Eduardo-Lima-Dev](https://github.com/Eduardo-Lima-Dev/)
+- LinkedIn: [Eduardo Lima](https://www.linkedin.com/in/luiz-eduardo12/)
+- Instagram: [@eduard0.dev](https://www.instagram.com/eduard0.dev/)
+- TikTok: [@um.simples.dev](https://www.tiktok.com/@um.simples.dev)
+- E-mail: eduardo.devtech@gmail.com

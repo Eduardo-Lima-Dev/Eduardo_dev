@@ -34,7 +34,10 @@
     "view_repo": "Ver repositório",
     "view_live": "Ver em produção",
     "not_in_production": "Este projeto ainda está em desenvolvimento",
+    "in_development": "Em desenvolvimento",
     "view_all_projects": "Ver todos os projetos",
+    "all_projects": "Todos os Projetos",
+    "all_projects_subtitle": "Uma coleção completa dos meus projetos e trabalhos",
     "projects": {
       "pixelados": {
         "description": "Divida despesas de repúblicas e moradias compartilhadas com facilidade."
@@ -77,7 +80,7 @@
   "about": {
     "title": "Sobre",
     "subtitle": "Um pouco sobre mim",
-    "description": "Sou Eduardo, desenvolvedor apaixonado por transformar ideias em produtos reais. Com experiência em Kotlin, React + Next.js e liderança de times como Product Owner, já entreguei apps nativos, plataformas web de alta performance e landing pages que convertem. Meu foco é escrever código limpo, criar experiências fluidas e gerar valor de negócio — seja em projetos freelance ou em times CLT/PJ.",
+    "description": "Sou Eduardo, Desenvolvedor Full Stack apaixonado por transformar ideias em produtos reais. Com forte atuação no ecossistema JavaScript (React, Next.js, Node.js) e Mobile (Kotlin, Flutter), combino visão estratégica de negócio com arquitetura de sistemas robusta.\n\nMinha experiência inclui liderança técnica e Engenharia de Produto, atuando desde integrações complexas com Spring Boot até interfaces de alta performance. Meu foco é unir código limpo e escalável à entrega de valor real, seja como Tech Lead ou desenvolvedor.",
     "download_cv": "Baixar CV completo"
   },
   "contact": {

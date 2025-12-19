@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useTranslations } from 'next-intl';
 
-const sections = ["hero", "services", "portfolio", "about", "contact"];
+const sections = ["hero", "about", "services", "portfolio", "contact"];
 
 export default function ScrollButton() {
   const [currentSection, setCurrentSection] = useState("hero");

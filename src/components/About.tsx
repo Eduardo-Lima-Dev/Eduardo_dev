@@ -25,7 +25,8 @@ export default function About() {
           className="w-full flex justify-center md:w-1/3 md:justify-start"
         >
           <Image
-            src="/images/profile_1.jpg"
+            // src="/images/profile_1.jpg"
+            src="/images/profile_photo.jpg"
             alt="Eduardo Dev"
             width={400}
             height={400}
@@ -40,7 +41,7 @@ export default function About() {
           className="w-full text-center md:w-2/3 md:text-left"
         >
           <h2 className="text-3xl font-bold md:text-4xl">{t('title')}</h2>
-          <p className="mt-4 text-lg leading-relaxed text-zinc-300">
+          <p className="mt-4 text-lg leading-relaxed text-zinc-300 whitespace-pre-line">
             {t('description')}
           </p>
 

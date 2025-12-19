@@ -14,7 +14,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'services', 'portfolio', 'about', 'contact'];
+      const sections = ['hero', 'about', 'services', 'portfolio', 'contact'];
       const scrollPosition = window.scrollY + 200;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
@@ -66,7 +66,7 @@ export default function Navbar() {
         </Link>
 
         <ul className="hidden gap-8 md:flex">
-          {['services', 'portfolio', 'about', 'contact'].map((id) => (
+          {['about', 'services', 'portfolio', 'contact'].map((id) => (
             <li key={id}>
               <Link 
                 href={`#${id}`} 

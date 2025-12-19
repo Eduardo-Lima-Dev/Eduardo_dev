@@ -34,7 +34,10 @@
     "view_repo": "View repository",
     "view_live": "View in production",
     "not_in_production": "This project is still in development",
+    "in_development": "In Development",
     "view_all_projects": "View all projects",
+    "all_projects": "All Projects",
+    "all_projects_subtitle": "A complete collection of my projects and works",
     "projects": {
       "pixelados": {
         "description": "Easily split expenses for shared houses and co-living spaces."
@@ -77,7 +80,7 @@
   "about": {
     "title": "About",
     "subtitle": "A bit about me",
-    "description": "I'm Eduardo, a developer passionate about turning ideas into real products. With experience in Kotlin, React + Next.js, and team leadership as a Product Owner, I've delivered native apps, high-performance web platforms, and converting landing pages. My focus is on writing clean code, creating fluid experiences, and generating business value — whether in freelance projects or CLT/PJ teams.",
+    "description": "I'm Eduardo, a Full Stack Developer passionate about turning ideas into real products. With strong experience in the JavaScript ecosystem (React, Next.js, Node.js) and Mobile (Kotlin, Flutter), I combine strategic business vision with robust system architecture.\n\nMy experience includes technical leadership and Product Engineering, working from complex integrations with Spring Boot to high-performance interfaces. My focus is to unite clean and scalable code with real value delivery, whether as a Tech Lead or developer.",
     "download_cv": "Download full CV"
   },
   "contact": {
