@@ -1,7 +1,7 @@
 {
   "common": {
     "hero_title": "Código limpo.\nResultados rápidos.",
-    "hero_subtitle": "Desenvolvedor Android & Front-End com experiência em liderança técnica e Product Ownership.",
+    "hero_subtitle": "Desenvolvedor Flutter, Mobile e Full Stack com experiência em liderança técnica e Product Ownership.",
     "whatsapp": "Falar no WhatsApp",
     "email": "Enviar E-mail"
   },
@@ -15,8 +15,8 @@
     "title": "Serviços",
     "subtitle": "O que posso fazer por você",
     "android": {
-      "title": "Desenvolvimento Android",
-      "description": "Apps nativos com Kotlin, arquitetura limpa e boas práticas"
+      "title": "Desenvolvimento Mobile",
+      "description": "Apps com Flutter, React Native e Kotlin, arquitetura limpa e boas práticas"
     },
     "frontend": {
       "title": "Desenvolvimento Front-End",
@@ -39,9 +39,6 @@
     "all_projects": "Todos os Projetos",
     "all_projects_subtitle": "Uma coleção completa dos meus projetos e trabalhos",
     "projects": {
-      "pixelados": {
-        "description": "Divida despesas de repúblicas e moradias compartilhadas com facilidade."
-      },
       "powerfit": {
         "description": "App Kotlin Compose para gestão de treinos e resultados em academias."
       },
@@ -54,9 +51,6 @@
       "frequentium": {
         "description": "Facilita o registro de horas complementares dos participantes do Meu Racha."
       },
-      "homelife": {
-        "description": "Plataforma para serviços de saúde domiciliar e atendimento a pacientes."
-      },
       "androidconnect": {
         "description": "App Flutter que conecta seu dispositivo Android ao PC via Wi-Fi para depuração."
       },
@@ -64,7 +58,7 @@
         "description": "App mobile para alunos encontrarem e anunciarem aluguéis em Quixadá."
       },
       "eficienciaenergetica": {
-        "description": "Backend Node.js e aplicativo Android em Java para medição de luz ambiente."
+        "description": "Aplicativo Android em Java e backend Node.js/Python para medição e análise de eficiência energética do Tribunal de Justiça de Teresina-PI."
       },
       "rediux": {
         "description": "Plataforma web para compartilhar conteúdo educacional sobre UX."
@@ -72,15 +66,40 @@
       "siggflow": {
         "description": "Sistema de cadastro e gestão de alunos da UFC de Quixadá, com controle de matérias cursadas."
       },
-      "malibuatelie": {
-        "description": "Sistema de catálogo virtual para loja de crochê, desenvolvido como projeto freelance."
+      "hospitalcare": {
+        "description": "App React Native que conecta clientes a profissionais de saúde para atendimento domiciliar, com agendamento, geolocalização e pagamento. Publicado na App Store e na Play Store, aguardando liberação ao público. Freelance como Tech Lead."
+      },
+      "speedmed": {
+        "description": "Sistema web de gestão clínica com agendamentos, histórico de atendimentos e comunicação com pacientes. Atuo como Tech Lead."
+      },
+      "probatorai": {
+        "description": "Aplicativo web mobile-first para educação que gera questões e provas com IA, integrado a APIs de back-end."
+      },
+      "metanolfc": {
+        "description": "App mobile de uso interno, em desenvolvimento e já em funcionamento, dentro de um monorepo com API NestJS e web em React."
+      },
+      "radarmanhua": {
+        "description": "App Flutter de uso pessoal integrado ao Telegram para ler mangás, manhwas e quadrinhos coreanos, com notificações de novos conteúdos."
+      },
+      "darkharmony": {
+        "description": "App mobile de uso pessoal, inspirado no Spotify, que lista e toca músicas direto do Google Drive."
+      },
+      "academiaufc": {
+        "description": "App Flutter para acompanhar o progresso das matérias cursadas na UFC Quixadá."
+      },
+      "pinheirosociety": {
+        "description": "App desktop Flutter para gerenciamento de quadras e comandas, com builds para Windows, Linux e macOS, entregue a um cliente final."
       }
-    }
+    },
+    "in_review": "Aguardando liberação nas lojas",
+    "mobile": "Mobile",
+    "web": "Web",
+    "desktop": "Desktop"
   },
   "about": {
     "title": "Sobre",
     "subtitle": "Um pouco sobre mim",
-    "description": "Sou Eduardo, Desenvolvedor Full Stack apaixonado por transformar ideias em produtos reais. Com forte atuação no ecossistema JavaScript (React, Next.js, Node.js) e Mobile (Kotlin, Flutter), combino visão estratégica de negócio com arquitetura de sistemas robusta.\n\nMinha experiência inclui liderança técnica e Engenharia de Produto, atuando desde integrações complexas com Spring Boot até interfaces de alta performance. Meu foco é unir código limpo e escalável à entrega de valor real, seja como Tech Lead ou desenvolvedor.",
+    "description": "Sou Eduardo, Desenvolvedor Mobile e Full Stack apaixonado por transformar ideias em produtos reais. Atuo com Flutter/Dart, React Native e Kotlin, além do ecossistema web (React, Next.js, Angular, Node.js, Spring Boot), incluindo aplicações desktop para Windows, Linux e macOS.\n\nFui Tech Lead em startups de saúde (SpeedMed e HC Hospital Care) e Product Owner, com visão do ciclo completo: da arquitetura à entrega. Meu foco é unir código limpo e escalável à entrega de valor real.",
     "download_cv": "Baixar CV completo"
   },
   "contact": {
@@ -99,4 +118,4 @@
     "scroll": "Descer",
     "backToTop": "Voltar ao início"
   }
-} 
+}

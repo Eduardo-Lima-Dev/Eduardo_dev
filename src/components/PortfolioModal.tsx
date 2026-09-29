@@ -8,6 +8,7 @@ import { fadeIn } from "./variants";
 import { useTranslations } from "next-intl";
 import Lottie from "lottie-react";
 import Flag from "./Flag";
+import PlatformBadge from "./PlatformBadge";
 import toast from "react-hot-toast";
 
 interface Props {
@@ -19,7 +20,7 @@ interface Props {
 export interface PortfolioItem {
   id: string;
   title: string;
-  repo: string;
+  repo?: string;
   production?: string;
   description: string;
   stack: string[];
@@ -27,6 +28,8 @@ export interface PortfolioItem {
   animation?: any;
   inDevelopment?: boolean;
   allowProduction?: boolean;
+  inReview?: boolean;
+  platform: "mobile" | "web" | "desktop";
 }
 
 export default function PortfolioModal({ open, onClose, item }: Props) {
@@ -74,6 +77,8 @@ export default function PortfolioModal({ open, onClose, item }: Props) {
 
           <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-base">
             {item.inDevelopment && <Flag />}
+            {item.inReview && <Flag label={t('in_review')} />}
+            <PlatformBadge platform={item.platform} />
             {item.animation ? (
               <Lottie
                 animationData={item.animation}
@@ -87,7 +92,7 @@ export default function PortfolioModal({ open, onClose, item }: Props) {
             width={800}
             height={450}
                 className="rounded-lg object-cover"
-                unoptimized={item.img?.includes('microlink.io')}
+                unoptimized={item.img?.includes('microlink.io') || item.img?.endsWith('.svg')}
           />
             )}
           </div>
@@ -107,15 +112,17 @@ export default function PortfolioModal({ open, onClose, item }: Props) {
           </div>
 
           <div className="mt-6 flex gap-4">
-          <a
-            href={item.repo}
-            target="_blank"
-            rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 font-semibold shadow hover:bg-primary-dark"
-          >
-              <Github size={20} />
-              {t('view_repo')}
-            </a>
+            {item.repo ? (
+              <a
+                href={item.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 font-semibold shadow hover:bg-primary-dark"
+              >
+                <Github size={20} />
+                {t('view_repo')}
+              </a>
+            ) : null}
             {item.production && isWebProject && (
               <a
                 href={item.production}
