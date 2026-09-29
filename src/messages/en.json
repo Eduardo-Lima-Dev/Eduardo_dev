@@ -99,7 +99,7 @@
   "about": {
     "title": "About",
     "subtitle": "A bit about me",
-    "description": "I'm Eduardo, a Mobile and Full Stack Developer passionate about turning ideas into real products. I work with Flutter/Dart, React Native and Kotlin, plus the web ecosystem (React, Next.js, Angular, Node.js, Spring Boot), including desktop apps for Windows, Linux and macOS.\n\nI have been Tech Lead at healthtech startups (SpeedMed and HC Hospital Care) and Product Owner, with a view of the full cycle: from architecture to delivery. My focus is to unite clean, scalable code with real value delivery.",
+    "description": "I'm Eduardo, a mobile and full stack developer. I currently lead two React Native apps for healthtech startups: HC Hospital Care, which connects patients to professionals for home care and is already submitted to the stores awaiting release, and SpeedMed, a clinic management system.\n\nI started with Flutter. I delivered a desktop app for managing courts and tabs to a real client, with Windows, Linux and macOS builds, and I maintain my own apps that I use daily, like Radar Manhua and Dark Harmony.\n\nDay to day, I write Angular and Spring Boot on Propag and React with TypeScript on SPAs, and I've been a Product Owner handling roadmap and backlog. I like deciding the architecture, reviewing code and following a feature until it reaches the user.",
     "download_cv": "Download full CV"
   },
   "contact": {

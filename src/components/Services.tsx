@@ -19,16 +19,19 @@ export default function Services() {
       title: t('android.title'),
       desc: t('android.description'),
       Icon: Smartphone,
+      gradient: "from-teal-600 to-cyan-400",
     },
     {
       title: t('frontend.title'),
       desc: t('frontend.description'),
       Icon: Globe,
+      gradient: "from-violet-700 to-pink-400",
     },
     {
       title: t('product.title'),
       desc: t('product.description'),
       Icon: GaugeCircle,
+      gradient: "from-orange-600 to-amber-300",
     },
   ];
 
@@ -54,15 +57,18 @@ export default function Services() {
         </motion.p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-3">
-          {services.map(({ title, desc, Icon }) => (
+          {services.map(({ title, desc, Icon, gradient }) => (
             <motion.div
               key={title}
               variants={fadeUp}
               initial="hidden"
               animate={controls}
-              className="rounded-xl bg-base/70 p-8 shadow-lg backdrop-blur transition hover:-translate-y-1 hover:shadow-primary/30"
+              className="group relative overflow-hidden rounded-xl bg-base/70 p-8 shadow-lg backdrop-blur transition hover:-translate-y-1 hover:shadow-primary/30"
             >
-              <Icon size={40} className="mx-auto mb-4 text-primary" />
+              <div className={`pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br ${gradient} opacity-20 blur-2xl transition-opacity group-hover:opacity-40`} />
+              <div className={`relative mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${gradient} text-white shadow-lg`}>
+                <Icon size={30} />
+              </div>
               <h3 className="mb-2 text-xl font-semibold">{title}</h3>
               <p className="text-zinc-400">{desc}</p>
             </motion.div>

@@ -5,6 +5,7 @@ import { fadeUp } from "./variants";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import GlowBackground from "./GlowBackground";
 
 export default function Contact() {
   const [controls, ref] = useScrollAnimation();
@@ -17,8 +18,10 @@ export default function Contact() {
         variants={fadeUp}
         initial="hidden"
         animate={controls}
-        className="mx-auto max-w-lg rounded-xl bg-base/70 p-10 text-center backdrop-blur"
+        className="relative mx-auto max-w-lg overflow-hidden rounded-xl border border-primary/30 bg-base/70 p-10 text-center backdrop-blur"
       >
+        <GlowBackground />
+        <div className="relative">
         <h2 className="text-3xl font-bold md:text-4xl">
           {t('build_something')}
         </h2>
@@ -40,6 +43,7 @@ export default function Contact() {
           >
             {t('email')}
           </Link>
+        </div>
         </div>
       </motion.div>
     </section>

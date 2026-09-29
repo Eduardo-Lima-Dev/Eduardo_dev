@@ -24,14 +24,16 @@ export default function About() {
           animate={controls}
           className="w-full flex justify-center md:w-1/3 md:justify-start"
         >
+          <div className="relative">
+          <div className="absolute -inset-3 -rotate-3 rounded-2xl bg-gradient-to-br from-violet-700 to-pink-400 opacity-60 blur-sm" />
           <Image
-            // src="/images/profile_1.jpg"
-            src="/images/profile_photo.jpg"
+            src="/images/profile_about.jpg"
             alt="Eduardo Dev"
             width={400}
             height={400}
-            className="rounded-xl object-cover"
+            className="relative rounded-xl object-cover"
           />
+          </div>
         </motion.div>
 
         <motion.div
